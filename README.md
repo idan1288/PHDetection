@@ -24,11 +24,11 @@ If it finds a module from the Delayed import table that isn't loaded to the memo
 So we are going to check the EXE's pNtH->FileHeader.TimeDateStamp and compare it to the memory's loaded EXE.
 If they are different, we found a hollowed process.
 ## Assumptions
-The malware writer didn't load the modules that the original EXE is depends on.
-The malware writer didn't change the timestamp header value in the hollowed process to the one that the original EXE had on the disk.
+* The malware writer didn't load the modules that the original EXE is depends on.
+* The malware writer didn't change the timestamp header value in the hollowed process to the one that the original EXE had on the disk.
 
 ## Usage
-Just run the file according to your windows version (32/64 bit)
+Just run the file according to your windows version (32/64 bit) with admin privileges.
 
 ## Credits
 Apiset resolving:
